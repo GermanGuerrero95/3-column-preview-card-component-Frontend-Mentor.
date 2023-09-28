@@ -1,0 +1,182 @@
+:root {
+    /*Primary*/
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    
+
+    /*Neutral*/
+   
+    
+
+    /*Utilies*/
+    --marginTop: 10rem;
+
+
+
+    /*Typo 700*/
+
+    --headersTypo:'Big Shoulders Display', cursive;
+
+    /*Typo 400*/
+
+    --typo:'Lexend Deca', sans-serif;
+}
+
+
+
+/*Global*/
+
+html {
+    font-size: 62.5%;   
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+   
+    margin-top: var(--marginTop);
+    font-family: var(--typo);
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: var(--marginTop);
+    
+}
+
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+
+}
+
+
+h2{
+    font-family: var(--headersTypo);
+}
+
+
+section{
+    padding: 5rem;
+    height: 75%;
+}
+
+
+
+/*Utilies*/
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (min-width: 1440px){ 
+    .container{
+        flex-direction: row;
+        align-items: center;
+        height: 80vh;
+    }
+}
+
+
+
+.heading {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1440px){ 
+    .heading{
+    margin-top: 4.5rem;
+    font-size: 4rem;
+    }
+}
+.text {
+    margin-top: 2.5rem;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+@media (min-width: 1440px){ 
+    .text{
+        margin-top: 4rem;
+        line-height: 3rem;
+    }
+}
+
+button{
+    margin-top: 2.5rem;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    font-family: var(--typo);
+    font-weight: bold;
+    word-spacing: 0.1rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 1440px){ 
+    button{
+        margin-top: 5rem;
+    }
+}
+
+
+/*Sedans*/
+
+.sedans {
+    background-color: var(--Brightorange); 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+@media (min-width:1440px){ 
+    .sedans{
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+
+.button-orange{
+    color: var(--Brightorange);
+}
+
+
+/*Suvs*/
+
+.suvs {
+    background-color: var(--Darkcyan);
+}
+
+.button-veryDark{
+    color: var(--Darkcyan);
+}
+
+
+/*Luxury*/
+.luxury {
+    background-color: var(--Verydarkcyan);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+@media (min-width: 1440px){ 
+   .luxury{
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+   } 
+}
+
+.button-cyan{
+    color: var(--Verydarkcyan);
+}
